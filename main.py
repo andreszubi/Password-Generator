@@ -43,5 +43,14 @@ final_password = random.choice([password, password2])
 
 #Print the final password
 print(f"Your password is: {final_password}")
+print("Thank you for using the PyPassword Generator!")
+
+#Ask the user if they want to generate another password
+another_password = input("Do you want to generate another password? (y/n)\n")
+if another_password == "y":
+    main()
+else:
+    print("Thank you for using the PyPassword Generator!")
+
 
 

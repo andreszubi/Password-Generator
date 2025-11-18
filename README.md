@@ -12,6 +12,7 @@ The PyPassword Generator is a command-line tool that generates random passwords 
 - **Dual Password Generation**: Creates two password candidates for increased randomness
 - **Organized Output**: Passwords are sorted by character type (letters → symbols → numbers) and then alphabetically
 - **Random Selection**: Randomly chooses between the two generated passwords for the final output
+- **Multiple Password Generation**: Option to generate additional passwords without restarting the program
 
 ## How It Works
 
@@ -39,6 +40,10 @@ The PyPassword Generator is a command-line tool that generates random passwords 
    - The program randomly selects one of the two sorted passwords
    - The selected password is displayed as the final result
 
+5. **Repeat Option**:
+   - After displaying the password, the program asks if you want to generate another password
+   - Enter `y` to generate a new password with new preferences, or `n` to exit
+
 ### Code Structure
 
 - **Character Lists**: Predefined lists of letters, numbers, and symbols
@@ -62,6 +67,11 @@ The PyPassword Generator is a command-line tool that generates random passwords 
 3. The program will display:
    - The two sorted password candidates (for debugging/testing)
    - Your final randomly selected password
+   - A prompt asking if you want to generate another password
+
+4. (Optional) Generate another password:
+   - Enter `y` to start the process again with new preferences
+   - Enter `n` to exit the program
 
 ## Example
 
@@ -76,6 +86,10 @@ How many numbers would you like in your password?
 ['A', 'B', 'c', 'd', '!', '#', '1', '2']
 ['X', 'y', 'Z', 'a', '$', '%', '5', '7']
 Your password is: ABcd!#12
+Thank you for using the PyPassword Generator!
+Do you want to generate another password? (y/n)
+n
+Thank you for using the PyPassword Generator!
 ```
 
 ## Requirements
